@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.admin')
 
 @section('content')
     <div class="row mx-auto justify-content-center">
@@ -8,7 +8,7 @@
                     <h4 class="mb-0">Edit User</h4>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('user.update') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('admin.user.update') }}" method="post" enctype="multipart/form-data">
                         @csrf
                         {{ method_field('PUT') }}
                         <input type="hidden" name="id" value="{{ $user->id }}"> 

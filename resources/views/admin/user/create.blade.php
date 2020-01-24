@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.admin')
 
 @section('content')
     <div class="row mx-auto justify-content-center">
@@ -8,7 +8,7 @@
                     <h4 class="mb-0">Create User</h4>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('user.store') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('admmin.user.store') }}" method="post" enctype="multipart/form-data">
                         @csrf
 
                         <div class="row">
